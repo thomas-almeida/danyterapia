@@ -31,6 +31,8 @@ let schedules = []
 const schedulesData = fs.readFileSync(dbPath, 'utf-8')
 schedules = schedulesData ? JSON.parse(schedulesData) : []
 
+
+// send schedule
 function sendSchedule(req, res) {
     try {
         const { name, whatsapp, intentDate, intentHour, service } = req.body
@@ -77,6 +79,8 @@ function sendSchedule(req, res) {
         })
     }
 }
+
+//all schedules [future feature]
 
 export default {
     sendSchedule
