@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('opentype'),
+    url('../../fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../../fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'SF Pro Display' !important;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.2s fadeInUp;
+}
+
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}

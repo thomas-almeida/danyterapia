@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuide de você com massoterapia! Agende sua sessão ou tire dúvidas via WhatsApp.">
+    <meta name="keywords" content="massoterapia, bem-estar, terapia corporal, agendamento, relaxamento">
+    <meta name="author" content="Dany Massoterapia">
+    <title>Dany Massoterapia - Sinta-se Bem Consigo Mesmo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="public/logo.png" type="image/x-icon">
+</head>
+
+<body class="bg-white text-gray-900 font-sans font-[SF Pro Display]">
+    <header class="flex justify-center items-center px-6 py-4 bg-white shadow-md">
+        <div class="flex justify-start items-center">
+            <a class="text-lg font-bold text-pink-600" href="index.html">Dany</a>
+        </div>
+        <button aria-label="Abrir menu" class="text-gray-600 focus:outline-none hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </header>
+
+
+    <main class="flex flex-col items-center text-center px-6 py-6">
+
+        <section class="my-6">
+            <div class="text-4xl font-bold mb-6 flex justify-center items-center flex-col">
+                <img src="public/agendamento.png" class="my-4 w-[160px]" alt="">
+                <h1 class="text-gray-900">Agende seu horário</h1>
+            </div>
+            <p class="text-gray-700 text-lg mb-8 font-semibold">
+                Fique tranquilo(a)!, assim que terminar de agendar, entraremos em contato com você via Whatsapp para
+                confirmar seu agendamento
+            </p>
+        </section>
+
+        <section class="text-center my-6">
+            <form class="p-4 text-left">
+                <label for="name" class="text-lg">Seu Nome</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="Seu nome completo" 
+                    required
+                    class="border w-full p-2 rounded-md shadow-sm my-1 mb-4 text-lg"
+                >
+                <label for="whatsapp" class="text-lg">Telefone <b class="text-green-600">WhatsApp</b></label>
+                <input 
+                    type="text" 
+                    name="whatsapp" 
+                    id="whatsapp" 
+                    placeholder="Seu nome completo" 
+                    required
+                    class="border w-full p-2 rounded-md shadow-sm my-1 mb-4 text-lg"
+                >
+                <label for="intentDate" class="text-lg">Selecione uma Data</label>
+                <input 
+                    type="text" 
+                    name="intentDate" 
+                    id="intentDate" 
+                    placeholder="Selecione"
+                    onfocus="(this.type = 'date')" 
+                    required
+                    class="border w-full p-2 rounded-md shadow-sm my-1 mb-4 text-lg"
+                >
+                <label for="intentHour" class="text-lg">Selecione um horário</label>
+                <input 
+                    type="text" 
+                    name="intentHour" 
+                    id="intentHour" placeholder="Selecione"
+                    onfocus="(this.type = 'time')" required
+                    class="border w-full p-2 rounded-md shadow-sm my-1 mb-4 text-lg">
+                <label for="service" class="text-lg">Selecione o Atendimento</label>
+                <select name="service" id="service" required
+                    class="border w-full p-2 rounded-md shadow-sm my-1 mb-4 text-lg">
+                    <option value="">Selecione</option>
+                    <option value="Massagem Terapêutica">Massagem Terapêutica</option>
+                    <option value="Drenagem Linfática">Drenagem Linfática</option>
+                    <option value="Massagem e Drenagem">Massagem e Drenagem</option>
+                </select>
+                <div class="flex justify-center items-center mt-4 flex-col">
+                    <input type="submit" value="Agendar Minha Sessão"
+                        class="inline-block w-full max-w-xs bg-pink-600 text-white text-md font-semibold rounded-md px-6 py-3 shadow hover:bg-pink-700 transition-colors cursor-pointer">
+                    <a class="inline-block w-full max-w-xs bg-slate-500 text-white text-md font-semibold rounded-md px-6 py-3 shadow hover:bg-slate-700 transition-colors cursor-pointer mt-4 text-center"
+                        href="index.html">
+                        Voltar
+                    </a>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center py-6 bg-gray-100 text-gray-600">
+        <p>&copy; 2024 Dany Massoterapia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="send-schedule.js"></script>
+
+</html>
