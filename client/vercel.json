@@ -8,8 +8,20 @@
   ],
   "routes": [
     {
-      "src": "/.*",
-      "dest": "index.html"
+      "src": "/(.*\\.(png|jpg|css|js|svg|ico|webp))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/agendamento",
+      "dest": "/agendamento.html"
+    },
+    {
+      "src": "/obrigado",
+      "dest": "/obrigado.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
